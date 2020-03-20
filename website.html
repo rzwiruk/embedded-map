@@ -16,13 +16,19 @@
     <script>
 // Initialize and add the map
 function initMap() {
-  // The location of Warsaw
+  // The location of the cities
   var warsaw = {lat: 52.14, lng: 21.1};
+  var posen = {lat: 52.4, lng: 16.91666};
+  var breslau = {lat: 51.1, lng: 17.03333};
+  var danzig = {lat: 54.3666, lng: 18.63333};
   // The map, centered at Warsaw
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 6, center: warsaw});
   // The marker, positioned at Warsaw
-  var marker = new google.maps.Marker({position: warsaw, map: map});
+  var warsaw_marker = new google.maps.Marker({position: warsaw, map: map});
+  var posen_marker = new google.maps.Marker({position: posen, map: map});
+  var breslau_marker = new google.maps.Marker({position: breslau, map: map});
+  var danzig_marker = new google.maps.Marker({position: danzig, map: map});
 }
     </script>
     <!--Load the API from the specified URL
